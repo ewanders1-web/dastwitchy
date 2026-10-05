@@ -1,0 +1,17 @@
+[Unit]
+Description=DasTwitchy recorder bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/hatch/workspace/dastwitchy
+ExecStart=/home/hatch/workspace/twitch-bot/venv/bin/python /home/hatch/workspace/dastwitchy/dastwitchy.py
+Restart=on-failure
+RestartSec=30
+Environment=HOME=/home/hatch
+Environment=PATH=/opt/hatch/bin:/usr/local/bin:/usr/bin:/bin
+
+[Install]
+WantedBy=multi-user.target
