@@ -1,0 +1,14 @@
+{
+  "streamers": ["whistleface", "sweetdeesauce"],
+  "record": false,
+  "check_interval_secs": 60,
+  "process_interval_secs": 10,
+  "stall_timeout_secs": 600,
+  "demucs_chunk_secs": 600,
+  "demucs_model": "htdemucs",
+  "max_part_bytes": 47185920,
+  "min_part_secs": 600,
+  "drive_root": "TwitchRecordings",
+  "drive_originals": "Originals",
+  "drive_parts": "Parts"
+}
